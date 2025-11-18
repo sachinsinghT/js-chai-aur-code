@@ -10,6 +10,8 @@
 //     }
 // }
 
+
+
 // user.welcomeMessage();
 // user.username="sam"
 
@@ -79,9 +81,13 @@
 
 ( function chai(){
  console.log("db connected")
- })()
+ })();// semi colon is imortant here to execute 2 iife 
 
-//  we use iife to to get rid of global variable pollutions
+( (name)=>{
+ console.log(`db ${name} connected successfully`)
+ })("sachin")
+
+//  we use iife to to get rid of global variable
 
 
 
