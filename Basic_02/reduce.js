@@ -7,7 +7,7 @@ const myNums=[1,2,3]
 
 // console.log(myTotal)
 
-// using arrow function
+// using arrow functions
 
 const myTotal=myNums.reduce((acc,currval)=>acc+currval,0)
 
